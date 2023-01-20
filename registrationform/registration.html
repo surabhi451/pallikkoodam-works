@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head> 
+<body class="container">
+    <div class="container">
+        <form onsubmit="handleSubmit(event)" name="login">
+          <div>
+            <label for="data">FIRST NAME</label>
+            <input type="text" name="fname" class="form-control" placeholder="ENTER YOUR FIRST NAME" >
+            <span class="text-danger d-none">invalid first name</span>
+        </div>
+        <div>
+          <label for="data">LAST NAME</label>
+          <input type="text" name="lname" class="form-control" placeholder="ENTER YOUR LAST NAME">
+          <span class="text-danger d-none">invalid last name</span>
+      </div>
+        <div>
+            <label for="email">EMAIL ID</label>
+            <input type="email" name="email" class="form-control" placeholder="ENTER YOUR EMAIL ID">
+            <span class="text-danger d-none">invalid email</span>
+        </div>
+        <div>
+          <label for="email">BATE OF BIRTH</label>
+          <input type="date" name="dob" class="form-control" >
+          <span class="text-danger d-none">invalid bate of birth</span>
+      </div>
+        <div>
+          <label fOR="number">PHONE NUMBER</label>
+          <input type="text" name="pnumber" class="form-control" placeholder="ENTER YOUR PHONE NUMBER" >
+          <span class="text-danger d-none">invalid phone number</span>
+      </div>
+        <div>
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" class="form-control" placeholder="ENTER YOUR PASSWORD">
+          <span class="text-danger d-none">invalid password</span>
+      </div>
+      <div>
+        <label for="password">CONFIRM PASSWORD</label>
+        <input type="password" name="cpassword" class="form-control" placeholder="RE-ENTER PASSWORD">
+        <span class="text-danger d-none">invalid confirm password</span>
+    </div>
+      
+    <div class="d-grid">
+        <button type="submit" class="btn btn-primary
+        mt-2">Register</button>
+    </div></form>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="registration.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+    <p> this is a paragraph</p>
+    <script>
+        const name = prompt('enter your name:');
+        console.log('you are', name);
+    </script>
+    <hr>
+
+    <p> default content</p>
+    <script>
+        document.write('<h1> HELLO WORLD </h1>');
+    </script>
+    <hr>
+
+    <p id="p1"> default content</p>
+    <script>
+        const element = document.getElementById('p1');
+        // element .innerText = 'new text';
+        console.log(element.innerText);
+    </script>
+    <hr>
+
+
+
+    <p id="p1"> default content</p>
+    <script>
+        const elements = document.getElementById('p1');
+        elements.style.color = 'red';
+    </script> 
+
+    <hr>
+
+    <p id="p1"> hello world</p>
+    <script>
+        let e = document.getElementById('p1');
+        e.style.color = 'blue';
+        e.style.textAlign = 'center';
+        e.style.fontSize = '25px';
+        e.style.fontWeight = 'bold';
+    </script>
+
+    <hr>
+
+    <button onclick="handleclick()">click me</button>
+    <script>
+        function handleclick() {
+            console.log('button clicked');
+            alert('button clicked');
+        }
+    </script>
+    <hr>
+
+
+
+    <button onclick="handleclick(event)"> click me</button>
+    <button onclick="handleclick(event)"> click me</button>
+    <script>
+        function handleclick(e) {
+            console.log(e);
+            alert('button clicked')
+
+            e.target.innerText = 'clicked';
+            e.target.style.color = 'green';
+        }
+    </script>
+    <hr>
+
+
+
+    <p onclick="handleclick(event)"> this is a paragraph</p>
+
+    <script>
+        function handleclick(e) {
+            console.log(e);
+            alert('paragraph clicked')
+
+            e.target.innerText = 'welcome to this page';
+            e.target.style.color = 'green';
+        }
+    </script>
+
+    <hr>
+    <p>first paragraph</p>
+    <p>second paragraph</p>
+    <script>
+        var e = document.getElementsByTagName('p');
+        for (let i = 0; i < e.length; i++) {
+            const element = e[i];
+            element.innerText = 'New Text';
+        }
+    </script>
+    <hr>
+    <p id="p1">first paragraph</p>
+    <p>second paragraph</p>
+    <p>third paragraph</p>
+    <p>fourth paragraph</p>
+    <script>
+        document.getElementById('p1').remove();
+    </script>
+    <hr>
+    <p id="p1" style="color: violet;">first paragraph</p>
+    <p>second paragraph</p>
+    <p>third paragraph</p>
+    <p>fourth paragraph</p>
+    <script>
+        document.getElementById('p1').removeAttribute('style');
+    </script>
+    <hr>
+    <input type="text" id="email" value="dnnefjkf">
+    <script>
+        let res = document.getElementById('email').getAttribute('type');
+        document.write(res);
+    </script>
+
+
+
+</body>
+
+</html>
+
